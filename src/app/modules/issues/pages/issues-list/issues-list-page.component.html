@@ -14,6 +14,7 @@
     <!-- Listado -->
     <section class="mt-4 flex flex-col col-span-2">
       <h3>Issues</h3>
+      <a routerLink="/issue/123">Issue 123</a>
       <!-- TODO: Listado de issues -->
       <!-- TODO: Spinner -->
       <!-- TODO: Si no hay issues por el filtro -->
@@ -22,6 +23,12 @@
     <!-- Labels -->
     <section>
       <h3>Labels</h3>
+
+      @if (labels.isLoading()) {
+        <p>Estamos cargando</p>
+      } @else {
+        <pre>{{ labels.data() | json }}</pre>
+      }
       <!-- TODO: Spinner -->
       <!-- TODO: Label Selector -->
     </section>
