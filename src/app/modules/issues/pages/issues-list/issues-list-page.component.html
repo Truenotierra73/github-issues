@@ -21,13 +21,13 @@
     </section>
 
     <!-- Labels -->
-    <section>
+    <section class="mt-4 text-center">
       <h3>Labels</h3>
 
       @if (labels.isLoading()) {
         <p>Estamos cargando</p>
       } @else {
-        <pre>{{ labels.data() | json }}</pre>
+        <issues-labels-selector [labels]="labels.data() ?? []" />
       }
       <!-- TODO: Spinner -->
       <!-- TODO: Label Selector -->
