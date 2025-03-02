@@ -14,7 +14,7 @@ import { GitHubIssue } from '../interfaces';
 })
 export class IssuesService {
   issuesQuery: CreateQueryResult<GitHubIssue[], Error> = injectQuery(() => ({
-    queryKey: ['labels'],
+    queryKey: ['issues'],
     queryFn: () => getIssues(),
   }));
 }
