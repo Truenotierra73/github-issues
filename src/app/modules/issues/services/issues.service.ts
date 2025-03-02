@@ -1,9 +1,20 @@
 import { Injectable } from '@angular/core';
 
+import {
+  CreateQueryResult,
+  injectQuery,
+} from '@tanstack/angular-query-experimental';
+
+import { getIssues } from '../actions';
+
+import { GitHubIssue } from '../interfaces';
+
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class IssuesService {
-
-  constructor() { }
+  issuesQuery: CreateQueryResult<GitHubIssue[], Error> = injectQuery(() => ({
+    queryKey: ['labels'],
+    queryFn: () => getIssues(),
+  }));
 }
