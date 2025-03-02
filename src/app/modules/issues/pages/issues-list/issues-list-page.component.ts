@@ -15,6 +15,6 @@ export default class IssuesListPageComponent {
   private readonly labelsService: LabelsService = inject(LabelsService);
 
   get labels() {
-    return this.labelsService.labelsQuery$;
+    return this.labelsService.labelsQuery;
   }
 }

@@ -13,7 +13,7 @@ import { GitHubLabel } from '../interfaces';
   providedIn: 'root',
 })
 export class LabelsService {
-  labelsQuery$: CreateQueryResult<GitHubLabel[], Error> = injectQuery(() => ({
+  labelsQuery: CreateQueryResult<GitHubLabel[], Error> = injectQuery(() => ({
     queryKey: ['labels'],
     queryFn: () => getLabels(),
   }));
