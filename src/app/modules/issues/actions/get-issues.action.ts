@@ -6,7 +6,7 @@ import { GitHubIssue } from '../interfaces';
 const BASE_URL: string = environment.baseUrl;
 const GITHUB_TOKEN: string = environment.gitHubToken;
 
-export const getIssuesAction: () => Promise<GitHubIssue[]> = async (): Promise<
+export const getIssues: () => Promise<GitHubIssue[]> = async (): Promise<
   GitHubIssue[]
 > => {
   try {
