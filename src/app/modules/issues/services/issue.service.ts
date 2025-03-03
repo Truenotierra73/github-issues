@@ -5,7 +5,7 @@ import {
   CreateQueryResult,
 } from '@tanstack/angular-query-experimental';
 
-import { getIssueByNumber } from '../actions';
+import { getIssueByNumber, getIssueCommentsByNumber } from '../actions';
 
 import { GitHubIssue } from '../interfaces';
 
@@ -27,6 +27,14 @@ export class IssueService {
     return injectQuery(() => ({
       queryKey: ['issue', this.issue],
       queryFn: () => getIssueByNumber(this.issue),
+      enabled: this.issue !== '',
+    }));
+  }
+
+  getIssueCommentsQuery(): CreateQueryResult<GitHubIssue[], Error> {
+    return injectQuery(() => ({
+      queryKey: ['issue', this.issue, 'comments'],
+      queryFn: () => getIssueCommentsByNumber(this.issue),
       enabled: this.issue !== '',
     }));
   }
