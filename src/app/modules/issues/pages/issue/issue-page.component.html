@@ -1,3 +1,15 @@
 <article>
-  <h1>Issue number: <small>123</small></h1>
+  <header>
+    <h1>
+      Issue number: <small>{{ issueNumber() }}</small>
+    </h1>
+    <a routerLink="/">Regresar</a>
+  </header>
+  <section>
+    @if (issueQuery.isLoading()) {
+      <p>Cargando issue...</p>
+    } @else if (issueQuery.data()) {
+      <issue-comment [issue]="issueQuery.data()!" />
+    }
+  </section>
 </article>
