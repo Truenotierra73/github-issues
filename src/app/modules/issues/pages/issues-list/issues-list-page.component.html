@@ -14,8 +14,16 @@
     <!-- Listado -->
     <section class="mt-4 flex flex-col col-span-2">
       <h3>Issues</h3>
-      <a routerLink="/issue/123">Issue 123</a>
       <!-- TODO: Listado de issues -->
+      @for (issue of issues.data(); track issue.id) {
+        <issue-item [issue]="issue" />
+      } @empty {
+        @if (issues.isLoading()) {
+          <p>Cargando issues...</p>
+        } @else {
+          <p>No hay issues que mostrar.</p>
+        }
+      }
       <!-- TODO: Spinner -->
       <!-- TODO: Si no hay issues por el filtro -->
     </section>
