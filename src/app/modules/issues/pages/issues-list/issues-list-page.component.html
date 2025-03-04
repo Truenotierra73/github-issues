@@ -5,9 +5,27 @@
   <section class="grid grid-cols-1 sm:grid-cols-3 gap-2">
     <div class="flex flex-col col-span-3">
       <div class="flex gap-2">
-        <button class="btn active">All</button>
-        <button class="btn">Open</button>
-        <button class="btn">Closed</button>
+        <button
+          [class.active]="currentState() === State.All"
+          class="btn"
+          (click)="onChangeState(State.All)"
+        >
+          All
+        </button>
+        <button
+          [class.active]="currentState() === State.Open"
+          class="btn"
+          (click)="onChangeState(State.Open)"
+        >
+          Open
+        </button>
+        <button
+          [class.active]="currentState() === State.Closed"
+          class="btn"
+          (click)="onChangeState(State.Closed)"
+        >
+          Closed
+        </button>
       </div>
     </div>
 
