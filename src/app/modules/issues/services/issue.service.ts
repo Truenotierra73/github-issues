@@ -1,8 +1,9 @@
-import { Injectable, signal, WritableSignal } from '@angular/core';
+import { inject, Injectable, signal, WritableSignal } from '@angular/core';
 
 import {
   injectQuery,
   CreateQueryResult,
+  QueryClient,
 } from '@tanstack/angular-query-experimental';
 
 import { getIssueByNumber, getIssueCommentsByNumber } from '../actions';
@@ -13,6 +14,7 @@ import { GitHubIssue } from '../interfaces';
   providedIn: 'root',
 })
 export class IssueService {
+  private readonly queryClient: QueryClient = inject(QueryClient);
   private readonly issueNumber: WritableSignal<string> = signal<string>('');
 
   set issue(id: string) {
@@ -28,6 +30,7 @@ export class IssueService {
       queryKey: ['issue', this.issue],
       queryFn: () => getIssueByNumber(this.issue),
       enabled: this.issue !== '',
+      staleTime: 1000 * 60 * 3,
     }));
   }
 
@@ -37,5 +40,19 @@ export class IssueService {
       queryFn: () => getIssueCommentsByNumber(this.issue),
       enabled: this.issue !== '',
     }));
+  }
+
+  prefetchIssue(issueId: string): void {
+    this.queryClient.prefetchQuery({
+      queryKey: ['issue', issueId],
+      queryFn: () => getIssueByNumber(issueId),
+      staleTime: 1000 * 60 * 3,
+    });
+  }
+
+  setIssueData(issue: GitHubIssue): void {
+    this.queryClient.setQueryData(['issue', issue.number.toString()], issue, {
+      updatedAt: 1000 * 60,
+    });
   }
 }
