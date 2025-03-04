@@ -30,7 +30,7 @@ export class IssueService {
       queryKey: ['issue', this.issue],
       queryFn: () => getIssueByNumber(this.issue),
       enabled: this.issue !== '',
-      staleTime: 1000 * 60 * 3,
+      staleTime: 1000 * 60,
     }));
   }
 
@@ -46,7 +46,7 @@ export class IssueService {
     this.queryClient.prefetchQuery({
       queryKey: ['issue', issueId],
       queryFn: () => getIssueByNumber(issueId),
-      staleTime: 1000 * 60 * 3,
+      staleTime: 1000 * 60,
     });
   }
 
