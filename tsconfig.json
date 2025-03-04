@@ -6,7 +6,8 @@
     "baseUrl": "./",
     "paths": {
       "@helpers/*": ["src/app/helpers/*"],
-      "@environments/*": ["src/environments/*"]
+      "@environments/*": ["src/environments/*"],
+      "@mocks/*": ["src/app/mocks/*"]
     },
     "outDir": "./dist/out-tsc",
     "strict": true,
@@ -21,7 +22,8 @@
     "moduleResolution": "bundler",
     "importHelpers": true,
     "target": "ES2022",
-    "module": "ES2022"
+    "module": "ES2022",
+    "resolveJsonModule": true
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

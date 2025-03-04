@@ -1,5 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { QueryClient } from '@tanstack/angular-query-experimental';
+
 import IssuesListPageComponent from './issues-list-page.component';
 
 describe('IssuesListPageComponent', () => {
@@ -9,6 +11,7 @@ describe('IssuesListPageComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [IssuesListPageComponent],
+      providers: [QueryClient],
     }).compileComponents();
 
     fixture = TestBed.createComponent(IssuesListPageComponent);

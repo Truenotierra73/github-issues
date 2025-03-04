@@ -1,0 +1,272 @@
+[
+  {
+    "id": 2732535159,
+    "node_id": "MDU6TGFiZWwyNzMyNTM1MTU5",
+    "url": "https://api.github.com/repos/angular/angular/labels/Accessibility",
+    "name": "Accessibility",
+    "color": "b52eea",
+    "default": false,
+    "description": "issues related to accessibility (a11y)"
+  },
+  {
+    "id": 135584804,
+    "node_id": "MDU6TGFiZWwxMzU1ODQ4MDQ=",
+    "url": "https://api.github.com/repos/angular/angular/labels/action:%20cleanup",
+    "name": "action: cleanup",
+    "color": "e11d21",
+    "default": false,
+    "description": "The PR is in need of cleanup, either due to needing a rebase or in response to comments from reviews"
+  },
+  {
+    "id": 205383140,
+    "node_id": "MDU6TGFiZWwyMDUzODMxNDA=",
+    "url": "https://api.github.com/repos/angular/angular/labels/action:%20discuss",
+    "name": "action: discuss",
+    "color": "fbca04",
+    "default": false,
+    "description": ""
+  },
+  {
+    "id": 4049110526,
+    "node_id": "LA_kwDOAXExC87xWIX-",
+    "url": "https://api.github.com/repos/angular/angular/labels/action:%20global%20presubmit",
+    "name": "action: global presubmit",
+    "color": "efa892",
+    "default": false,
+    "description": "The PR is in need of a google3 global presubmit"
+  },
+  {
+    "id": 133556520,
+    "node_id": "MDU6TGFiZWwxMzM1NTY1MjA=",
+    "url": "https://api.github.com/repos/angular/angular/labels/action:%20merge",
+    "name": "action: merge",
+    "color": "6cdd99",
+    "default": false,
+    "description": "The PR is ready for merge by the caretaker"
+  },
+  {
+    "id": 1166741855,
+    "node_id": "MDU6TGFiZWwxMTY2NzQxODU1",
+    "url": "https://api.github.com/repos/angular/angular/labels/action:%20presubmit",
+    "name": "action: presubmit",
+    "color": "efa892",
+    "default": false,
+    "description": "The PR is in need of a google3 presubmit"
+  },
+  {
+    "id": 2356354918,
+    "node_id": "MDU6TGFiZWwyMzU2MzU0OTE4",
+    "url": "https://api.github.com/repos/angular/angular/labels/action:%20rerun%20CI%20at%20HEAD",
+    "name": "action: rerun CI at HEAD",
+    "color": "4ccec5",
+    "default": false,
+    "description": ""
+  },
+  {
+    "id": 217969169,
+    "node_id": "MDU6TGFiZWwyMTc5NjkxNjk=",
+    "url": "https://api.github.com/repos/angular/angular/labels/action:%20review",
+    "name": "action: review",
+    "color": "fbca04",
+    "default": false,
+    "description": "The PR is still awaiting reviews from at least one requested reviewer"
+  },
+  {
+    "id": 6415547372,
+    "node_id": "LA_kwDOAXExC88AAAABfmV77A",
+    "url": "https://api.github.com/repos/angular/angular/labels/adev:%20preview",
+    "name": "adev: preview",
+    "color": "1d76db",
+    "default": false,
+    "description": ""
+  },
+  {
+    "id": 6056307068,
+    "node_id": "LA_kwDOAXExC88AAAABaPvpfA",
+    "url": "https://api.github.com/repos/angular/angular/labels/animations:%20async",
+    "name": "animations: async",
+    "color": "8ee24d",
+    "default": false,
+    "description": "Issues related to async animation loading"
+  },
+  {
+    "id": 217956517,
+    "node_id": "MDU6TGFiZWwyMTc5NTY1MTc=",
+    "url": "https://api.github.com/repos/angular/angular/labels/area:%20animations",
+    "name": "area: animations",
+    "color": "c7def8",
+    "default": false,
+    "description": ""
+  },
+  {
+    "id": 698221504,
+    "node_id": "MDU6TGFiZWw2OTgyMjE1MDQ=",
+    "url": "https://api.github.com/repos/angular/angular/labels/area:%20bazel",
+    "name": "area: bazel",
+    "color": "c5def5",
+    "default": false,
+    "description": "Issues related to the published `@angular/bazel` build rules"
+  },
+  {
+    "id": 166647239,
+    "node_id": "MDU6TGFiZWwxNjY2NDcyMzk=",
+    "url": "https://api.github.com/repos/angular/angular/labels/area:%20benchpress",
+    "name": "area: benchpress",
+    "color": "c7def8",
+    "default": false,
+    "description": ""
+  },
+  {
+    "id": 193817683,
+    "node_id": "MDU6TGFiZWwxOTM4MTc2ODM=",
+    "url": "https://api.github.com/repos/angular/angular/labels/area:%20build%20&%20ci",
+    "name": "area: build & ci",
+    "color": "c7def8",
+    "default": false,
+    "description": "Related the build and CI infrastructure of the project"
+  },
+  {
+    "id": 217986512,
+    "node_id": "MDU6TGFiZWwyMTc5ODY1MTI=",
+    "url": "https://api.github.com/repos/angular/angular/labels/area:%20common",
+    "name": "area: common",
+    "color": "c7def8",
+    "default": false,
+    "description": "Issues related to APIs in the @angular/common package"
+  },
+  {
+    "id": 644231098,
+    "node_id": "MDU6TGFiZWw2NDQyMzEwOTg=",
+    "url": "https://api.github.com/repos/angular/angular/labels/area:%20common/http",
+    "name": "area: common/http",
+    "color": "c5def5",
+    "default": false,
+    "description": "Issues related to HTTP and HTTP Client"
+  },
+  {
+    "id": 1412404129,
+    "node_id": "MDU6TGFiZWwxNDEyNDA0MTI5",
+    "url": "https://api.github.com/repos/angular/angular/labels/area:%20compiler",
+    "name": "area: compiler",
+    "color": "c7def8",
+    "default": false,
+    "description": "Issues related to `ngc`, Angular's template compiler"
+  },
+  {
+    "id": 375501288,
+    "node_id": "MDU6TGFiZWwzNzU1MDEyODg=",
+    "url": "https://api.github.com/repos/angular/angular/labels/area:%20core",
+    "name": "area: core",
+    "color": "c7def8",
+    "default": false,
+    "description": "Issues related to the framework runtime"
+  },
+  {
+    "id": 1888369788,
+    "node_id": "MDU6TGFiZWwxODg4MzY5Nzg4",
+    "url": "https://api.github.com/repos/angular/angular/labels/area:%20dev-infra",
+    "name": "area: dev-infra",
+    "color": "c7def8",
+    "default": false,
+    "description": "Issues related to Angular's own dev infra (build, test, CI, releasing)"
+  },
+  {
+    "id": 3773593268,
+    "node_id": "LA_kwDOAXExC87g7Ha0",
+    "url": "https://api.github.com/repos/angular/angular/labels/area:%20devtools",
+    "name": "area: devtools",
+    "color": "c7def8",
+    "default": false,
+    "description": ""
+  },
+  {
+    "id": 6190835462,
+    "node_id": "LA_kwDOAXExC88AAAABcQCnBg",
+    "url": "https://api.github.com/repos/angular/angular/labels/area:%20docs",
+    "name": "area: docs",
+    "color": "c5def5",
+    "default": false,
+    "description": "Related to the documentation"
+  },
+  {
+    "id": 6186925951,
+    "node_id": "LA_kwDOAXExC88AAAABcMT_fw",
+    "url": "https://api.github.com/repos/angular/angular/labels/area:%20docs-infra",
+    "name": "area: docs-infra",
+    "color": "c5def5",
+    "default": false,
+    "description": "Angular.dev application and infrastructure"
+  },
+  {
+    "id": 739497239,
+    "node_id": "MDU6TGFiZWw3Mzk0OTcyMzk=",
+    "url": "https://api.github.com/repos/angular/angular/labels/area:%20elements",
+    "name": "area: elements",
+    "color": "c7def8",
+    "default": false,
+    "description": "Issues related to Angular Elements"
+  },
+  {
+    "id": 393879365,
+    "node_id": "MDU6TGFiZWwzOTM4NzkzNjU=",
+    "url": "https://api.github.com/repos/angular/angular/labels/area:%20forms",
+    "name": "area: forms",
+    "color": "c5def5",
+    "default": false,
+    "description": ""
+  },
+  {
+    "id": 251048427,
+    "node_id": "MDU6TGFiZWwyNTEwNDg0Mjc=",
+    "url": "https://api.github.com/repos/angular/angular/labels/area:%20i18n",
+    "name": "area: i18n",
+    "color": "c7def8",
+    "default": false,
+    "description": "Issues related to localization and internationalization"
+  },
+  {
+    "id": 2595993017,
+    "node_id": "MDU6TGFiZWwyNTk1OTkzMDE3",
+    "url": "https://api.github.com/repos/angular/angular/labels/area:%20in-memory-web-api",
+    "name": "area: in-memory-web-api",
+    "color": "c7def8",
+    "default": false,
+    "description": ""
+  },
+  {
+    "id": 497314946,
+    "node_id": "MDU6TGFiZWw0OTczMTQ5NDY=",
+    "url": "https://api.github.com/repos/angular/angular/labels/area:%20language-service",
+    "name": "area: language-service",
+    "color": "c7def8",
+    "default": false,
+    "description": "Issues related to Angular's VS Code language service"
+  },
+  {
+    "id": 1891966374,
+    "node_id": "MDU6TGFiZWwxODkxOTY2Mzc0",
+    "url": "https://api.github.com/repos/angular/angular/labels/area:%20migrations",
+    "name": "area: migrations",
+    "color": "c5def5",
+    "default": false,
+    "description": "Issues related to `ng update` migrations"
+  },
+  {
+    "id": 250379150,
+    "node_id": "MDU6TGFiZWwyNTAzNzkxNTA=",
+    "url": "https://api.github.com/repos/angular/angular/labels/area:%20packaging",
+    "name": "area: packaging",
+    "color": "c7def8",
+    "default": false,
+    "description": "Issues related to Angular's creation of npm packages"
+  },
+  {
+    "id": 164320632,
+    "node_id": "MDU6TGFiZWwxNjQzMjA2MzI=",
+    "url": "https://api.github.com/repos/angular/angular/labels/area:%20performance",
+    "name": "area: performance",
+    "color": "c7def8",
+    "default": false,
+    "description": "Issues related to performance"
+  }
+]
