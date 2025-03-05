@@ -20,7 +20,6 @@ describe('IssuesLabelsSelectorComponent', () => {
 
     fixture = TestBed.createComponent(IssuesLabelsSelectorComponent);
     component = fixture.componentInstance;
-    console.log(gitHubLabels);
     fixture.componentRef.setInput('labels', gitHubLabels);
     fixture.detectChanges();
   });
