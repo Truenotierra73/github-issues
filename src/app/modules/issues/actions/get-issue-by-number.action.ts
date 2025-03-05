@@ -1,5 +1,5 @@
 import { environment } from '@environments/environment';
-import { sleep } from '@helpers/sleep';
+// import { sleep } from '@helpers/sleep';
 
 import { GitHubIssue } from '../interfaces';
 
@@ -12,7 +12,7 @@ export const getIssueByNumber: (
   issueNumber: string,
 ): Promise<GitHubIssue> => {
   try {
-    await sleep(1500);
+    // await sleep(1500);
 
     const resp = await fetch(`${BASE_URL}/issues/${issueNumber}`, {
       headers: {
