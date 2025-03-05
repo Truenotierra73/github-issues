@@ -21,12 +21,12 @@ export const getIssueByNumber: (
     });
 
     if (!resp.ok) {
-      throw new Error('Failed to get issue.');
+      throw new Error(`Failed to get issue ${issueNumber}`);
     }
 
     return await resp.json();
   } catch (ex) {
     console.error(ex);
-    throw ex;
+    throw `${ex}`;
   }
 };

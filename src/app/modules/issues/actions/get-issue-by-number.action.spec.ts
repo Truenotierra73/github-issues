@@ -28,4 +28,23 @@ describe('GetIssueByNumber [action]', () => {
     });
     expect(result).toEqual(issue);
   });
+
+  it('should not fetch issue successfully', async () => {
+    const requestURL = `${BASE_URL}/issues/${issueNumber}`;
+    const issueResponse = new Response(null, {
+      status: 404,
+      statusText: 'Not Found',
+    });
+
+    spyOn(window, 'fetch').and.resolveTo(issueResponse);
+
+    await getIssueByNumber(issueNumber).catch((error) => {
+      expect(window.fetch).toHaveBeenCalledWith(requestURL, {
+        headers: {
+          Authorization: `Bearer ${GITHUB_TOKEN}`,
+        },
+      });
+      expect(error).toContain(`Error: Failed to get issue ${issueNumber}`);
+    });
+  });
 });
