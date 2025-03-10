@@ -21,12 +21,11 @@ export const getIssueCommentsByNumber: (
     });
 
     if (!resp.ok) {
-      throw new Error('Failed to get issue comments.');
+      throw new Error(`Failed to get issue comments ${issueNumber}.`);
     }
 
     return await resp.json();
   } catch (ex) {
-    console.error(ex);
-    throw ex;
+    throw `${ex}`;
   }
 };

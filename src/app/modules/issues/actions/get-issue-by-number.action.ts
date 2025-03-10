@@ -26,7 +26,6 @@ export const getIssueByNumber: (
 
     return await resp.json();
   } catch (ex) {
-    console.error(ex);
     throw `${ex}`;
   }
 };
