@@ -1,5 +1,5 @@
 import { environment } from '@environments/environment';
-import { sleep } from '@helpers/sleep';
+// import { sleep } from '@helpers/sleep';
 
 import { GitHubLabel } from '../interfaces';
 
@@ -10,7 +10,7 @@ export const getLabels: () => Promise<GitHubLabel[]> = async (): Promise<
   GitHubLabel[]
 > => {
   try {
-    await sleep(1500);
+    // await sleep(1500);
 
     const resp = await fetch(`${BASE_URL}/labels`, {
       headers: {
