@@ -1,4 +1,4 @@
-import { TestBed, waitForAsync } from '@angular/core/testing';
+import { TestBed } from '@angular/core/testing';
 
 import {
   provideTanStackQuery,
@@ -25,7 +25,7 @@ describe('LabelsService', () => {
 
   it('should load labels', () => {
     const labels = jasmine
-      .createSpy('_', service.labelsQuery.data)
+      .createSpy('service.labelsQuery.data', service.labelsQuery.data)
       .and.returnValue(labelsMock);
 
     expect(labels()?.length).toBe(30);
