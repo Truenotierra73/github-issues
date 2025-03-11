@@ -21,17 +21,19 @@ describe('GetIssueCommentsByNumber [action]', () => {
 
     spyOn(window, 'fetch').and.resolveTo(issueResponse);
 
-    getIssueCommentsByNumber(issueNumber).then((response: GitHubIssue[]) => {
-      expect(window.fetch).toHaveBeenCalledWith(requestURL, {
-        headers: {
-          Authorization: `Bearer ${GITHUB_TOKEN}`,
-        },
-      });
-      expect(response.length).toBeGreaterThanOrEqual(2);
-      expect(response).toEqual(issueComments);
+    getIssueCommentsByNumber(issueNumber)
+      .then((response: GitHubIssue[]) => {
+        expect(window.fetch).toHaveBeenCalledWith(requestURL, {
+          headers: {
+            Authorization: `Bearer ${GITHUB_TOKEN}`,
+          },
+        });
+        expect(response.length).toBeGreaterThanOrEqual(2);
+        expect(response).toEqual(issueComments);
 
-      done();
-    });
+        done();
+      })
+      .catch(() => done.fail());
   });
 
   it('should throw an error if response is not ok', (done: DoneFn) => {
